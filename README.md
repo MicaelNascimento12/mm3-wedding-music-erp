@@ -1,4 +1,4 @@
-# 🎻 MM3 Wedding Music ERP — Gestão de Casamentos para Banda & Assessoria Musical
+# MM3 Wedding Music ERP — Gestão de Casamentos para Banda & Assessoria Musical
 
 Sistema completo (web, desktop e Android) para gerenciar a operação de uma **banda / assessoria musical de casamentos**: agenda de cerimônias, escala de músicos, repertório, playbacks, sonorização e o financeiro de cada evento — funcionando **inclusive offline, em Modo Avião**, durante a cerimônia.
 
@@ -15,7 +15,7 @@ Sistema completo (web, desktop e Android) para gerenciar a operação de uma **b
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 | Módulo | O que faz |
 |---|---|
@@ -32,7 +32,7 @@ Sistema completo (web, desktop e Android) para gerenciar a operação de uma **b
 | **WhatsApp** | Geração automática da mensagem de convocação do músico e do roteiro para o grupo do evento. |
 | **Offline / Multi-dispositivo** | App Android nativo com banco local; sincronização com o PC pelo Wi-Fi ou por arquivo de backup (.json) — funciona em Modo Avião. |
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 ```mermaid
 flowchart LR
@@ -59,7 +59,7 @@ flowchart LR
 - **Frontend**: React 18 + Vite + TypeScript + Tailwind, servido pelo próprio FastAPI em produção.
 - **Mobile**: o mesmo frontend empacotado com **Capacitor** em um APK Android, com camada de dados offline (`offlineStore.ts`).
 
-## 📁 Estrutura
+## Estrutura
 
 ```
 ├── backend/                 # API FastAPI
@@ -81,7 +81,7 @@ flowchart LR
 └── docker-compose.yml       # PostgreSQL 15
 ```
 
-## 🚀 Como rodar
+## Como rodar
 
 ### Pré-requisitos
 - Python 3.11+
@@ -114,7 +114,7 @@ Para usar PostgreSQL: `docker compose up -d` (o schema e o seed são carregados 
 
 A documentação interativa da API fica em **http://localhost:8000/docs** (Swagger).
 
-### 📱 Gerar o APK Android
+### Gerar o APK Android
 Execute **`GERAR_APK_ANDROID.bat`**. Na primeira vez ele baixa sozinho o JDK 21 e o Android SDK; depois compila o frontend, sincroniza com o Capacitor e gera `Gestao-de-Casamentos.apk`.
 
 ## 🔌 Principais endpoints
@@ -129,17 +129,17 @@ Execute **`GERAR_APK_ANDROID.bat`**. Na primeira vez ele baixa sozinho o JDK 21 
 | `GET/POST` | `/api/v1/musicos` | Listagem e cadastro de músicos |
 | `GET` | `/api/v1/playbacks` | Biblioteca de playbacks |
 
-## 🧠 Regras de negócio em destaque
+## Regras de negócio em destaque
 
 - **Conflito de agenda:** um casamento conflita com outro não cancelado na mesma data se a janela *chegada da banda → término previsto* (ou início + 2h) se sobrepõe ou fica a menos de 90 minutos.
 - **DRE automático por evento:**
   `lucro líquido = valor do contrato − (cachês + deslocamento + sonorização)` e `margem % = lucro / receita × 100` — músicos que recusaram não entram no custo.
 - **Baixa de pagamento:** ao marcar um cachê como pago, a data de pagamento é preenchida automaticamente.
 
-## 🔒 Privacidade
+## Privacidade
 
 O banco de dados real, os áudios de playback e o arquivo `.env` **não fazem parte do repositório**. Os dados de exemplo (`02-seed.sql` / `seed.py`) são fictícios.
 
 ---
 
-Desenvolvido por **Micael Nascimento** · [LinkedIn](https://www.linkedin.com/in/SEU-USUARIO) · micael.nascimento9523@gmail.com
+Desenvolvido por **Micael Nascimento** · [LinkedIn](www.linkedin.com/in/micael-nascimento-sousa) · micael.nascimento9523@gmail.com
