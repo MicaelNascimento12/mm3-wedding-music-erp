@@ -117,7 +117,7 @@ A documentação interativa da API fica em **http://localhost:8000/docs** (Swagg
 ### Gerar o APK Android
 Execute **`GERAR_APK_ANDROID.bat`**. Na primeira vez ele baixa sozinho o JDK 21 e o Android SDK; depois compila o frontend, sincroniza com o Capacitor e gera `Gestao-de-Casamentos.apk`.
 
-## 🔌 Principais endpoints
+## Principais endpoints
 
 | Método | Rota | Descrição |
 |---|---|---|
