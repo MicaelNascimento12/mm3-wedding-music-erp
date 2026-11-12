@@ -1,0 +1,36 @@
+# ---------- Dados reais / sensiveis (NAO versionar) ----------
+*.db
+*.sqlite
+*.sqlite3
+.env
+!.env.example
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/logs/
+
+# ---------- Artefatos gerados ----------
+*.apk
+*.aab
+frontend/dist/
+frontend/android/app/src/main/assets/public/
+.android-sdk/
+
+# ---------- Python ----------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# ---------- Node ----------
+node_modules/
+npm-debug.log*
+
+# ---------- Ferramentas locais ----------
+prompt_antigravity.md
+.vscode/
+.idea/
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store

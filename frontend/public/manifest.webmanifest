@@ -1,0 +1,10 @@
+{
+  "name": "Sistema Musical de Casamentos",
+  "short_name": "Casamentos",
+  "description": "Gestão de Casamentos, Playbacks, Violino Solo, Escalas e Financeiro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "any"
+}

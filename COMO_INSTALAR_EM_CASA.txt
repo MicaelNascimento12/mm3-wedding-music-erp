@@ -1,0 +1,21 @@
+COMO INSTALAR O "GESTAO DE CASAMENTOS" EM CASA
+==============================================
+
+1) Extraia este .zip numa pasta fixa (ex: Area de Trabalho\sistema-mm3-musica).
+   Nao rode direto de dentro do .zip.
+
+2) Se ainda nao tiver, instale:
+   - Python  -> https://www.python.org/downloads/  (marque "Add python.exe to PATH")
+   - Node.js -> https://nodejs.org/  (versao LTS)
+
+3) De 2 cliques em: PREPARAR_COMPUTADOR_CASA.bat
+   (instala tudo e cria o atalho "Gestao de Casamentos" na Area de Trabalho)
+
+4) Opcional, para Tablet/Celular sincronizarem pelo Wi-Fi:
+   botao direito em LIBERAR_FIREWALL_TABLET_CELULAR.bat -> "Executar como administrador"
+
+5) Tablet (Redmi Pad Pro) e Celular (Poco X6):
+   envie o arquivo Gestao-de-Casamentos.apk pelo WhatsApp e instale.
+
+Seus casamentos, musicos e playbacks ja estao dentro deste pacote
+(arquivo mm3_musica.db e pasta backend\uploads).

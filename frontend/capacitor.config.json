@@ -1,0 +1,11 @@
+{
+  "appId": "br.com.mm3musica.casamentos",
+  "appName": "Gestão de Casamentos",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true,
+    "allowNavigation": ["*"]
+  }
+}
